@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<!--how to comment-->
+    <head>
+        <!--This section sets meta data and links css/javascript to the page-->
+        <meta charset="utf-8">
+        <meta name="author" content="Conor Tuck">
+        <meta name="description" content="A website for people new to the crypto market">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Stylesheets.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <title>Sams Signalls</title>
+    </head>
+    <body>
+        <header>
+            <!-- this section creates the hyperlinks for each of the pages and servers as a navigation bar-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Sam.html">Sam</a></li>
+                        <li><a href="Stoploss.html">Stop loss</a></li>
+                        <li><a href="tipsandtricks.html">Tips and tricks</a></li>
+                        <li><a href="btchart.html">Candle chart</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <H1 class="Title">Percentage Stop Loss Calculator</H1><hr/>
+            <!--this section utilises number inputs, buttons,javascript and outputs to calculate the stop loss -->
+            <div class="calculator">
+                
+                <p class="textbox">Crypto Price(USD)</p><input type="number" id="currentprice">
+                <br>
+                
+                <p class="textbox">Amount bought(Satoshis)</p><input type="number" id="totalamount"><br>
+                
+                <input id="button" type="button" value="Calculate" onclick="calculator();"><br>
+                
+                <p class="textbox">Stop loss:</p>
+                <output id="stoptotal"></output>
+                <!--javascript for manipulating inputs and displaying results with the javascript-->
+                <script src="JavaScript/Stop-loss.js"></script>
+            </div>
+                <H1>What is Stop loss?</H1>
+                <p>Stop loss is a simple calculation that represents when to back out of the market. This is a must use as it allows you to take measures to save the holdings that you have and minimise the risk of losing anymore. It does this by taking a percentage off the current market price and the amount of total satoshis(1 millionth of a btc)to create a point where you can choose to back out or not.</p>
+            
+                <p>This percentage stop loss that we use is based on a percentage of 15% from the current market price and you total holdings.</p>
+            
+                <p>To use simply type in the number of current price of a single crypto, then the amount you have saved up.</p>
+            
+                <p>Due to crypto being a volatile market, its best to look in depth at the pattern forming before basing a judgement on the stop loss.</p>
+            <div class="maintext">
+                
+            </div>
+            
+            <!-- The canvas is used to create floating bitcoin background effect-->
+            <canvas></canvas>
+            <script src="JavaScript/background.js"></script>
+        </main>
+        <footer>
+            <!-- I utilised a widget from coinmarketcap.com for my footer-->
+            <script type="text/javascript"  src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="GBP" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="GBP"></div>
+        </footer> 
+    </body>
+</html>

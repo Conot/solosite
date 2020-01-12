@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<!--how to comment-->
+    <head>
+        <!--This section sets meta data and links css/javascript to the page-->
+        <meta charset="utf-8">
+        <meta name="author" content="Conor Tuck">
+        <meta name="description" content="A website for people new to the crypto market">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Stylesheets.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <title>Sams Signalls</title>
+    </head>
+    
+    <body>
+        <header>
+            <!-- this section creates the hyperlinks for each of the pages and servers as a navigation bar-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Sam.html">Sam</a></li>
+                        <li><a href="Stoploss.html">Stop loss</a></li>
+                        <li><a href="tipsandtricks.html">Tips and tricks</a></li>
+                        <li><a href="btchart.html">Candle chart</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <!--This is the main body of the page and it will be filled with images and text -->
+            <div class="maintext">
+             <H1 class="Title">What is Bitcoin and crypto?</H1><hr/>
+                <img id="btchart" src="img/BTC_Logo.svg">
+                <p>Cryptocurrency is a peer to peer decentralised network where currency holders can carry out anonymous transactions between one another. As it is a decentralised platform it means that no one place holds all the data on the network. The first cryptocurrency was bitcoin. Bitcoin was created on 3rd january 2009 by Satoshi Nakamoto as he mined the first block for 50 bitcoins.</p>
+                
+            </div>
+            
+            <div class="maintext">
+                <h1>So how does Bitcoin work?</h1>
+                <p>A single bitcoin is essentially a file that is stored on a digital wallet. When transactions take place you send that file containing your bitcoin and is sent to the recipients wallet, all this is then stored on the public list called blockchain. Having a public list adds to the security of bitcoin as you are able to trace the history of each transactions to ensure its legitimacy</p>
+            </div>
+            
+            <div class="maintext">
+                <h1>How do you get Bitcoins?</h1>
+                <p>There are only three ways you are able to obtain a cryptocurrency.<br>The first would be to buy one. You can go online to cryptocurrency exchange brokers that will allow you to buy crypto such as bitcoin,litecoin and etherium. This probably the most common way of attaining crypto.<br> You can also trade bitcoins with other people. This way is more risky than a broker as you wont know if they will honor their side of the transaction. This process will also require you to send a hash for your wallet id in order to recieve bitcoins.<br>Lastly you can mine crypto currency. 
+                </p>
+            </div>
+            
+            <div class="maintext">
+                <h1>What is crypto mining?</h1>
+                <p>Currencys such as the pound (GBP) has to be created and formed into something physical that then can be used in person, but cypto is completely digital so how are they created? This is done through utilising your computing power to complicated calculations called blocks. Blocks are a collection of recent transactions that are recorded in a ledger. A single block has a limit to what it can hold so when one block is completed it passes the new transactions to the next ledger. Now there are only 21 million blocks that can be mined and 17 have already been. After each successfull block is mined 50btc is divided to everyone that participated in the ledger.
+                </p>
+            </div>
+            <!-- The canvas is used to create floating bitcoin background effect with the javascript-->
+            <canvas></canvas>
+            <script src="JavaScript/background.js"></script>
+        </main>
+        <footer>
+            <!-- I utilised a widget from coinmarketcap.com for my footer-->
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="GBP" data-secondary="" data-ticker="true" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="GBP"></div>
+        </footer>
+        
+    </body> 
+    
+</html>

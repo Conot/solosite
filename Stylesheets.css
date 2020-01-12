@@ -1,0 +1,190 @@
+/*this selector will set the position of the site to relevant and also make sure that the page is 100% of the viewport */
+html {
+    position: relative;
+    height: 100%; 
+}
+/*the selector for the body is used to contain most of the tags to the center of the page. The border for the page is set to make it round and appear a part of the body. the background image is  also set here. opacity is very minimally used to add effect  */
+body {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 0vw;
+    background-image: url(img/background.png);
+    opacity: 0.95;
+    height: 100%;
+}
+/*this sets the background color of the header tag and creates the border radius to create the round effect at the top corners of the screen. padding and margins are removed so that it can be placed at the very top of the screen */
+header {
+    background-color: rgb(0,0,0,);
+    border-radius: 0.5vh;
+    margin: 0;
+    padding: 0;
+}
+/*this selector sets teh fonts/size for all the headings as well as sets background to make it appear as 1 section. */
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2.5vh;
+    background-color: rgb(245,245,220);
+    display: inline-block;
+    opacity: 1;
+}
+/*this selector ensures that the nav bar and whats contained sits at the very top. Also sets teh width of the container as a percentage of the body. */
+nav {
+    top: 0;
+    position: absolute;
+    display: block;
+    border-bottom: 0px;
+    width: 100%; 
+}
+/*this selector hides the overflow of the lists and removes padding and margin between them */
+ul {
+    overflow: hidden;
+    margin:0;
+    padding: 0;
+}
+/*this selector is for the lists and will change the font/layout for each individual lists. sets teh background of each list as well as establishing border style and display. */
+ul li {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(105,105,105);
+    margin: -1vh;
+    padding: 0;
+    border-style: solid;
+    border-width: 0.1vh;
+    text-align: center;
+    display: inline-block;
+    list-style: none;
+    border-style: solid;
+    width: 12.53vw; 
+    height: 8vh;
+}
+/*this selector changes the property of the text in the list */
+li a {
+    margin: 0;
+    color: rgb(255,140,0);
+    text-decoration-line: none;
+    font-size: 1.4vw;
+    padding: 1.4vw;
+    display: block;
+}
+/* this makes it so when the mouse hovers over the list it  will change the color of the link adding interactivity*/
+a:hover {
+    color: rgb(0,0,0);
+}
+/*this selector creates a precident for most of the basic text to follow such as the font style/size and allignment on the page. */
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.0vw;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+/*the main tag sets the style of how the middle of the page should be */
+main {
+    padding-top: 4.2vh;
+    background-color:rgb(245,245,220);
+    height: 82.2%
+}
+/*this selector changes the properety of the widgets color to suit out website. also sets its position property to relative so nothing interferes with it. */
+footer {
+    padding-top: 5vh;
+    width:auto;
+    height:auto;
+    position: relative;
+    background-color: rgb(245,245,220);
+    padding-bottom: 0.3vh
+}
+/*this selector changes the opacity of each btc so it doesnt disttract you as much. also edits the z vlaue so that it is always behind the body of the page. */
+canvas {
+   position:absolute;
+   left:0;
+   top:0;
+   z-index:-1;
+   opacity: 0.2;
+}
+/*this changes the the position and the size of the btxhart image */
+#btchart {
+    float: right;
+    width: 35%;
+    opacity:inherit;
+}
+/*this selector makes the trading chart to be lower down on the page */
+.tradingview-widget-container {
+    margin-top: 1vh,
+}
+/*this selector changes the size of the bull/flag image aswell as it position */
+#bullflag {
+    height: 29vh;
+    position: relative;
+    float: left;
+    border-right: 1em solid rgb(245,245,220);
+}
+/*this selector changes the position and the size of the fallingknives image */
+#fallingknives {
+    float: right;
+    height: 9vh;
+    position: relative;
+}
+/*this changes the pisition and size of the sam question page */
+#samquestion {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+/*this changes the size and the position of the dompeet image */
+#dompeet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vh;
+    width: 58%;
+}
+/*this changes the heading of the second page so that it is nicely centered above the picture */
+.centertext {
+    margin-top: 2%;
+    margin-left: 44%;
+    margin-bottom: 0;
+}
+/*this selector centers all of the tags within it */
+.calculator {
+    text-align: center;
+}
+/*this centers each textbox aswell as changing the size of it */
+.textbox {
+    text-align: center;
+    font-size: 4vh
+}
+/*this changes the styling property of each of the input boxes */
+input {
+    margin-top: 2%;
+    height: 4vh;
+    width: 30%;
+    text-align: center;
+    font-size: 2em;
+}
+/*this changes the background color of each of the number boxes as well as defining its border */
+input, textarea {
+    background-color:rgb(105,105,105);
+    border: 1 dotted;
+    color: rgb(255,140,0);
+}
+/*this changes the styling of the button as well as sets it a background */
+#button {
+    width: 20%;
+    background-color:rgb(245,245,245);
+    color: rgb(255,140,0);
+}
+/*this creates an interactive effect where it changes background color to show that it can be pressed */
+#button:hover {
+    background-color: rgb(245,245,220);
+    
+}
+/*this changes the size of the output tag aswell as changing its font. */
+output {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.3vw
+}
+
+.coinmarketcap-currency-widget {
+    width: 100%;
+}
+    

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<!--how to comment-->
+    <head>
+        <!--This section sets meta data and links css/javascript to the page-->
+        <meta charset="utf-8">
+        <meta name="author" content="Conor Tuck">
+        <meta name="description" content="A website for people new to the crypto market">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="Stylesheets.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <title>Sams Signalls</title>
+    </head>
+    <body>
+        <header>
+            <!-- this section creates the hyperlinks for each of the pages and servers as a navigation bar-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Sam.html">Sam</a></li>
+                        <li><a href="Stoploss.html">Stop loss</a></li>
+                        <li><a href="tipsandtricks.html">Tips and tricks</a></li>
+                        <li><a href="btchart.html">Candle chart</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+        <!--This is where the cnadle chart widget is used. Also able to change variables to suit the website -->
+            <h1>(BTC/USD) Trading chart:</h1>
+           <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div id="tradingview_28912"></div>
+              <div class="tradingview-widget-copyright"><a href="https://uk.tradingview.com/symbols/BITSTAMP-BTCUSD/" rel="noopener" target="_blank"><span class="blue-text">BTCUSD Chart</span></a> by TradingView</div>
+              <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+              <script type="text/javascript">
+              new TradingView.widget(
+              {
+              "width": 650,
+              "height": 450,
+              "symbol": "BITSTAMP:BTCUSD",
+              "interval": "D",
+              "timezone": "Etc/UTC",
+              "theme": "Light",
+              "style": "1",
+              "locale": "uk",
+              "toolbar_bg": "#f1f3f6",
+              "enable_publishing": false,
+              "allow_symbol_change": true,
+              "container_id": "tradingview_28912"
+              }
+              );
+              </script>
+            </div>
+            <!-- TradingView Widget END -->
+             <!-- The canvas is used to create floating bitcoin background effect with the javascript-->
+        <canvas></canvas>
+            <script src="JavaScript/background.js"></script>
+        </main>
+        <footer>
+            <!-- I utilised a widget from coinmarketcap.com for my footer-->
+             <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script><div class="coinmarketcap-currency-widget" data-currencyid="1" data-base="GBP" data-secondary="" data-ticker="true" data-rank="false" data-marketcap="true" data-volume="true" data-statsticker="true" data-stats="GBP"></div>
+        </footer>
+    </body>
+    
+    
+</html>
